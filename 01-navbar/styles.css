@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-full{
+    height: 80vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.logo__container{
+    height: 6rem;
+    padding: 1rem;
+}
+
+.logo__container .logo__img{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    color: #fff;
+    display: flex;
+    padding-right: 2rem;
+}
+
+.navlist{
+    align-content: center;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav_item{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 480px) {
+    .logo__container{
+        margin: auto;
+    }
+
+    .navbar{
+        margin: auto;
+    }
+
+}
