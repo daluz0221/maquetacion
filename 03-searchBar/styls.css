@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.bar{
+    width: 95%;
+    border: 1px solid #333;
+    padding: .5rem 1rem;
+    border-radius: 14px;
+    box-shadow: #333;
+}
+
+.icons{
+    position: absolute;
+    top: 77%;
+    right: 4%;
+    display: flex;
+    gap: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: rgb(43, 190, 226);
+}
