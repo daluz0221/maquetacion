@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+body{
+    background-image: url("./assets/fondo.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 12px 12px 55px rgb(168, 42, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.img__style{
+    height: 25%;
+    background-color: blue;
+    z-index: 1;
+}
+
+.image__info{
+    height: 50%;
+    background-color: gray;
+    z-index: 2;
+}
+
+.skills__info{
+    height: 25%;
+    background-color: yellow;
+}
