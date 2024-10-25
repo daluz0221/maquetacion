@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+
+/* Efecto genial de fondo circular */
+/* body{
+    background: radial-gradient(circle, 
+    rgb(238, 1, 1) 10%, 
+    rgb(70, 55, 46) 20%, 
+    rgb(1, 151, 238) 30%, 
+    rgb(238, 1, 167) 40%, 
+    rgb(238, 1, 1) 50%, 
+    rgb(238, 96, 1) 60%, 
+    rgb(238, 1, 1) 70%, 
+    rgb(238, 96, 1) 80%, 
+    rgb(238, 1, 1) 90%, 
+    rgb(238, 96, 1) 100%);
+  background-size: cover; /* Cubrir toda la pantalla con los círculos 
+  background-position: center; /* Centrar las ondas 
+} */
+
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, 
+    #ff4242 0%,  /* Rojo claro en la parte superior */
+    #cc0000 100%  /* Rojo oscuro en la parte inferior */
+  );
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    
+}
+
+.logo{
+    width: 150px;
+
+}
+
+.img__logo{
+    width: 100%;
+}
+
+.navbar{
+    width: 450px;
+}
+
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__item{
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 100px;
+}
+
+.info__text{
+    color: #fff;
+    width: 35%;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 90px;
+}
+
+.title span{
+    font-weight: 600;
+}
+
+.info__content{
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.info__text button{
+    width: 200px;
+    height: 60px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: width .3s ease;
+}
+
+.info__text button:hover{
+    width: 250px;
+}
+
+.social__list{
+    list-style: none;
+    display: flex;
+    margin-top: 3rem;
+    width: 40%;
+    justify-content: flex-start;
+}
+
+.social__item{
+    margin-left: 1.4rem;
+    font-size: 2.5rem;
+    transition: transform .3s ease;
+}
+
+.social__item:hover{
+    transform: translateY(-15px);
+}
+
+.info__img{
+    height: 80vh;
+}
+
+.info__img img{
+    height: 100%;
+}
