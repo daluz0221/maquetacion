@@ -29,6 +29,8 @@ body{
     position: relative;
     transition: all .3s ease-in;
     border: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px #000;
 }
 
 .icon i{
@@ -50,6 +52,7 @@ body{
     width: 220px;
     border-radius: 35px;
     background: linear-gradient(to left, #01999e, #8de3e6);
+    box-shadow: 2px 2px 20px #01999e;
 }
 
 .icon .button__home i{
@@ -81,6 +84,8 @@ body{
     width: 220px;
     border-radius: 35px;
     background: linear-gradient(to left, #9e0177, #df1aad);
+    box-shadow: 2px 2px 20px #9e0177;
+    
 }
 
 .icon .button__message i{
@@ -113,6 +118,7 @@ body{
     width: 220px;
     border-radius: 35px;
     background: linear-gradient(to left, #cc5303, #e7823e);
+    box-shadow: 2px 2px 20px #cc5303;
 }
 
 .icon .button__cora i{
@@ -145,6 +151,7 @@ body{
     width: 220px;
     border-radius: 35px;
     background: linear-gradient(to left, #178801, #5dd844);
+    box-shadow: 2px 2px 20px #178801;
 }
 
 .icon .button__video i{
@@ -178,6 +185,7 @@ body{
     width: 220px;
     border-radius: 35px;
     background: linear-gradient(to left, #60007e, #a827cf);
+    box-shadow: 2px 2px 20px #60007e;
 }
 
 .icon .button__camera i{
