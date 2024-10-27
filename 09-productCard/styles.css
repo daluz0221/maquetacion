@@ -25,6 +25,8 @@ body{
     background-color: #333;
     display: flex;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 .estampa{
@@ -46,13 +48,124 @@ body{
     right: -100px;
     top: -60px;
     border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.container:hover .circle__blue{
+    width: 600px;
+    height: 600px;
+    top: -330px;
+    right: -210px;
 }
 
 .img__product{
-    width: 50%;
+    width: 60%;
     z-index: 1000;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transition: all .5s ease;
+}
+
+.container:hover .img__product{
+    top: 10%;
 }
 
 .img__product img{
     width: 100%;
+}
+
+.title__shoes{
+    color: #fff;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transition: all .5s ease;
+}
+
+.container:hover .title__shoes{
+    top: 55%;
+}
+
+.product__content{
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    height: 150px;
+    width: 50%;
+    justify-content: space-evenly;
+    transition: all .5s ease;
+}
+
+.container:hover .product__content{
+    top: 62%;
+}
+
+.size__content, .color__content{
+    display: flex;
+    color: #fff;
+}
+
+.size__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.size__item{
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    color: #111018;
+    padding: 2px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #333;
+
+}
+
+.size__item:hover{
+    background-color: rgb(199, 134, 14);
+    color: white;
+}
+
+.color__list{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.color__item1{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.color__item2{
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.color__item3{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.button__content{
+    background-color: rgb(160, 249, 252);
+    padding: 10px 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 150px;
+    align-self: center;
+    border-radius: 7px;
 }
