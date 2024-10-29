@@ -82,11 +82,91 @@ body::before{
     top: 11px;
 }
 
+.container{
+    width: 330px;
+    z-index: 100;
+    height: 320px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.netflix__text{
+    width: 100%;
+}
+
+.netflix__text img{
+    width: 100%;
+}
+
+.serie__info{
+    display: flex;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.text__summary{
+    color: #fff;
+}
+
+.buttons{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.play__button{
+    padding: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: red;
+    border: none;
+    width: 80px;
+}
+
+.list__button{
+    background: transparent;
+    color: #fff;
+    width: 80px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.see__trailer{
+    display: flex;
+    padding-top: 20px;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.see__trailer i{
+    color: #fff;
+    
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.see__trailer p{
+    color: #fff;
+}
+
+
+
+
 
 
 
 @media (min-width: 576px) {
-   
+   .container{
+    width: 420px;
+   }
 }
 
 @media (min-width: 768px) {
