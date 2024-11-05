@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+body{
+    height: 100vh;
+    /* background: repeating-linear-gradient(-45deg, 
+                                red 0, red 30%, 
+                                yellow 0, yellow 50%, 
+                                green 0, green 70%,
+                                rgb(255, 255, 255) 0, rgb(255, 255, 255)); */
+    /* background: linear-gradient(135deg, #fff , #710bf7cc ); */
+    opacity: 0.5;
+    background: #fff;
+    overflow: hidden;
+}
+
+.ball1{
+    position: absolute;
+    z-index: 1;
+    width:300px;
+    height: 300px;
+    background: rgb(111, 24, 224);
+    border-radius: 50%;
+    top: 120%;
+    left: 20%;
+    /* backdrop-filter: blur(100px); */
+    box-shadow: 1px 1px 320px 500px rgb(90, 18, 184);
+}
+
+.ball2{
+    position: absolute;
+    z-index: 1;
+    width:300px;
+    height: 300px;
+    background: rgb(13, 25, 202);
+    border-radius: 50%;
+    top: -35%;
+    left: 50%;
+    /* backdrop-filter: blur(100px); */
+    box-shadow: 1px 1px 280px 500px rgb(13, 25, 202);
+}
+
+.ball3{
+    position: absolute;
+    z-index: 1;
+    width:300px;
+    height: 300px;
+    background: rgb(13, 25, 202);
+    border-radius: 50%;
+    top: 150%;
+    left: 80%;
+    /* backdrop-filter: blur(100px); */
+    box-shadow: 1px 1px 380px 800px rgb(150, 152, 179);
+}
+
+
+
+.blocks1{
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: rgba(149, 85, 233, 0.3);
+    backdrop-filter: blur(10px);
+    top: 10%;
+    left: 45%;
+    border: 1px solid #fff;
+    animation: elevate-one 6s ease infinite;
+}
+
+
+
+
+.blocks2{
+    position: absolute;
+    z-index: 10;
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    background-color: rgba(149, 85, 233, 0.3);
+    backdrop-filter: blur(10px);
+    top: 17%;
+    left: 58%;
+    border: 1px solid #fff;
+    animation: elevate-one 7s ease infinite;
+}
+
+.blocks3{
+    position: absolute;
+    z-index: 30;
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    background-color: rgba(149, 85, 233, 0.3);
+    backdrop-filter: blur(1px);
+    top: 51%;
+    left: 26%;
+    border: 1px solid #fff;
+    animation: elevate-one 5s ease infinite;
+}
+
+.blocks4{
+    position: absolute;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: rgba(149, 85, 233, 0.3);
+    backdrop-filter: blur(1px);
+    top: 93%;
+    left: 49%;
+    border: 1px solid #fff;
+    animation: elevate-one 9s ease infinite;
+}
+
+.blocks5{
+    position: absolute;
+    z-index: 30;
+    width: 110px;
+    height: 110px;
+    border-radius: 6px;
+    background-color: rgba(149, 85, 233, 0.3);
+    backdrop-filter: blur(1px);
+    top: 73%;
+    left: 61%;
+    border: 1px solid #fff;
+    animation: elevate-one 9s ease infinite;
+}
+
+
+@keyframes elevate-one {
+    0% {
+        transform: translateY(0);
+        
+    }
+
+    50% {
+        transform: translateY(-70px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.container{
+    position: absolute;
+    z-index: 20;
+    width: 400px;
+    height: 450px;
+    top: 18%;
+    left: 35%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(1px);
+    border: 0.2px solid #fff;
+    box-shadow: 1px 1px 20px 1px #fafafa;
+    border-radius: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: ; */
+}
+
+.info__form{
+    height: 70%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin: 20px 0;
+    font-size: 2rem;
+    position: relative;
+}
+
+.title::after{
+    content: "______";
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+
+.info__form input{
+    margin: 15px 0;
+    height: 35px;
+    border-radius: 2rem;
+    background-color: rgba(249, 249, 250, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    border: none;
+    
+}
+
+::placeholder{
+    color: #fff;
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
