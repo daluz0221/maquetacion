@@ -1,0 +1,9 @@
+Notas de resposnive
+	0.5 para hacer imágene y videos responsivos, usamos max-width: 100%, height: auto
+	1. para las imágenes, crear varias, una para cada tamaño y usar picture, con el source
+	2. Videos responsivos
+		aspect-ratio: 16/9
+	3. iframe, lo mismo
+	4. en la medida de lo posible, en los media querys usar ems (que dependen de los px del padre, no del root)
+	5. viewport
+	
