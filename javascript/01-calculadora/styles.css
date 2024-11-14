@@ -7,6 +7,98 @@
     font-family: 'roboto';
 }
 
+body{
+    background-image: linear-gradient(45deg, #9b3f3f,#ec6d6d);
+    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #333;
+    width: 25%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: flex-end;
+    border-radius: 2rem;
+}
+
+.circle{
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 1rem 1rem 0 0;
+    grid-row: 1 / 2;
+}
+
+.numbers{
+    grid-row: 3 / 4;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.calculator__grid{
+    list-style: none;
+    width: 100%;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-row: 4 / 8;
+}
+
+.item{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: cyan;
+    transition: transform .5s ease;
+}
+
+.active{
+    transform: translateY(-8px);
+}
+
+.item1{
+    background-color: violet;
+    color: #fff;
+}
+
+.item19{
+    color: #333;
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+    height: 80%;
+    width: 65%;
+    border-radius: 2rem;
+    background-color: red;
+}
+
+.item2,
+.item3,
+.item4,
+.item8,
+.item11,
+.item16,
+.item18{
+    background-color: yellowgreen;
+}
+
 
 @media (min-width: 36em) {
 
