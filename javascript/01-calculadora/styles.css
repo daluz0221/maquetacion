@@ -25,6 +25,11 @@ body{
     grid-template-rows: repeat(7, 1fr);
     justify-items: flex-end;
     border-radius: 2rem;
+    transition: background-color .5s ease;
+}
+
+.light{
+    background-color: #fff;
 }
 
 .circle{
@@ -34,6 +39,11 @@ body{
     border-radius: 50%;
     margin: 1rem 1rem 0 0;
     grid-row: 1 / 2;
+    transition: background-color .5s ease;
+}
+
+.light__circle{
+    background-color: #333;
 }
 
 .numbers{
@@ -45,6 +55,11 @@ body{
     padding-right: 3rem;
     font-size: 2rem;
     color: #fff;
+    transition: color .5s ease;
+}
+
+.numbers__dark{
+    color: #333;
 }
 
 .calculator__grid{
@@ -67,7 +82,11 @@ body{
     align-items: center;
     border-radius: 50%;
     background-color: cyan;
-    transition: transform .5s ease;
+    transition: all .5s ease;
+}
+
+.item__dark{
+    background: rgb(177, 224, 224);
 }
 
 .active{
@@ -97,6 +116,11 @@ body{
 .item16,
 .item18{
     background-color: yellowgreen;
+    transition: background-color .5s ease;
+}
+
+.item2__dark{
+    background-color: rgb(227, 189, 241);
 }
 
 

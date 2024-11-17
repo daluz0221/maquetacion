@@ -2,12 +2,17 @@
 let numbers = document.querySelector("#numbers");
 let erase = document.querySelector(".item1");
 let calculateNumbers = document.querySelectorAll(".itemNumber");
+let items = document.querySelectorAll(".item");
 let deleteOne = document.querySelector(".item4");
 let sum = document.querySelector(".item11");
 let result = document.querySelector(".item19");
 let divisor = document.querySelector(".item2");
 let mult = document.querySelector(".item3");
 let less = document.querySelector(".item8");
+let circle = document.querySelector(".circle");
+let container = document.querySelector(".container");
+let itemActions = document.querySelectorAll(".itemAction");
+
 
 let firstNumber;
 let secondNumber;
@@ -18,6 +23,18 @@ let divide;
 let plus;
 let minus;
 
+
+circle.addEventListener("click", function(){
+    container.classList.toggle("light")
+    circle.classList.toggle("light__circle")
+    numbers.classList.toggle("numbers__dark")
+    items.forEach( item =>{
+        item.classList.toggle("item__dark")
+    } )
+    itemActions.forEach( item =>{
+        item.classList.toggle("item2__dark")
+    } )
+});
 
 erase.addEventListener("click", function(){
     numbers.innerHTML = 0;
